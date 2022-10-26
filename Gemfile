@@ -5,9 +5,9 @@ RAILS_VERSION = '5.0.7.2'
 
 ruby File.read(".ruby-version")
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 5.2.4.3', RAILS_VERSION
+gem 'actionpack', '>= 5.2.4.3', RAILS_VERSION
+gem 'railties', '>= 5.2.4.3', RAILS_VERSION
 
 gem 'activemodel-serializers-xml'
 gem 'actionmailer_inline_css'
@@ -34,7 +34,7 @@ gem 'useragent'
 
 # Please don't update hoptoad_notifier to airbrake.
 # It's for internal use only, and we monkeypatch certain methods
-gem 'hoptoad_notifier', "~> 2.4"
+gem 'hoptoad_notifier', '~> 2.4', '>= 2.4.11'
 
 # Notification services
 # ---------------------------------------
