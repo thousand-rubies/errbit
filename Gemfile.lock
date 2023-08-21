@@ -197,10 +197,6 @@ GEM
     launchy (2.5.0)
       addressable (~> 2.7)
     libv8-node (16.10.0.0)
-    libv8-node (16.10.0.0-arm64-darwin)
-    libv8-node (16.10.0.0-x86_64-darwin)
-    libv8-node (16.10.0.0-x86_64-darwin-19)
-    libv8-node (16.10.0.0-x86_64-linux)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -241,8 +237,8 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.2.3)
     netrc (0.11.0)
-    nio4r (2.5.8)
-    nio4r (2.5.8-java)
+    nio4r (2.5.9)
+    nio4r (2.5.9-java)
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -307,9 +303,9 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (5.0.0)
-    puma (5.6.5)
+    puma (6.3.1)
       nio4r (~> 2.0)
-    puma (5.6.5-java)
+    puma (6.3.1-java)
       nio4r (~> 2.0)
     racc (1.6.0)
     racc (1.6.0-java)
@@ -515,7 +511,7 @@ DEPENDENCIES
   pjax_rails
   poltergeist
   pry-rails
-  puma
+  puma (>= 5.6.7)
   rack-ssl
   rack-ssl-enforcer
   rails-controller-testing
@@ -539,7 +535,7 @@ DEPENDENCIES
   xmpp4r
 
 RUBY VERSION
-   ruby 2.7.6p219
+   ruby 2.7.8p225
 
 BUNDLED WITH
    2.3.21
