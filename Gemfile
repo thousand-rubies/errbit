@@ -6,13 +6,13 @@ RAILS_VERSION = '5.0.7.2'
 ruby File.read(".ruby-version")
 
 gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionpack', '>= 7.1.0', RAILS_VERSION
+gem 'railties', '>= 7.1.0', RAILS_VERSION
 
 gem 'activemodel-serializers-xml'
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise'
+gem 'devise', '>= 4.9.0'
 gem 'dotenv-rails'
 gem 'draper'
 gem 'errbit_plugin'
@@ -76,7 +76,7 @@ group :test do
   gem 'rails-controller-testing'
   gem 'rake'
   gem 'rspec'
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 5.0.0', require: false
   gem 'rspec-activemodel-mocks'
   gem 'mongoid-rspec', require: false
   gem 'fabrication'
@@ -96,7 +96,7 @@ end
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.5.1'
 gem 'pjax_rails'
 gem 'underscore-rails'
 
