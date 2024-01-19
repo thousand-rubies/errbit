@@ -23,10 +23,10 @@ gem 'htmlentities'
 gem 'kaminari'
 gem 'kaminari-mongoid'
 gem 'mongoid', '6.0.3'
-gem 'omniauth'
+gem 'omniauth', '>= 2.1.1'
 gem 'omniauth-rails_csrf_protection'
-gem 'omniauth-github'
-gem 'omniauth-google-oauth2'
+gem 'omniauth-github', '>= 2.0.1'
+gem 'omniauth-google-oauth2', '>= 1.1.0'
 gem 'rack-ssl', require: 'rack/ssl' # force SSL
 gem 'rack-ssl-enforcer', require: false
 gem 'rinku'
