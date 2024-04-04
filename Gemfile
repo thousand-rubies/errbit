@@ -5,15 +5,15 @@ RAILS_VERSION = '5.0.7.2'
 
 ruby File.read(".ruby-version")
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 7.0.8.1', RAILS_VERSION
+gem 'actionpack', '>= 7.0.8.1', RAILS_VERSION
+gem 'railties', '>= 7.0.8.1', RAILS_VERSION
 
 gem 'activemodel-serializers-xml'
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise'
-gem 'dotenv-rails'
+gem 'devise', '>= 4.9.0'
+gem 'dotenv-rails', '>= 3.0.0'
 gem 'draper'
 gem 'errbit_plugin'
 gem 'errbit_github_plugin'
@@ -23,10 +23,10 @@ gem 'htmlentities'
 gem 'kaminari'
 gem 'kaminari-mongoid'
 gem 'mongoid', '6.0.3'
-gem 'omniauth'
+gem 'omniauth', '>= 2.1.1'
 gem 'omniauth-rails_csrf_protection'
-gem 'omniauth-github'
-gem 'omniauth-google-oauth2'
+gem 'omniauth-github', '>= 2.0.1'
+gem 'omniauth-google-oauth2', '>= 1.1.0'
 gem 'rack-ssl', require: 'rack/ssl' # force SSL
 gem 'rack-ssl-enforcer', require: false
 gem 'rinku'
@@ -62,25 +62,25 @@ group :development, :test do
   gem 'airbrake', '~> 4.3.5', require: false
   gem 'rubocop', '~> 0.71.0', require: false
   gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.1.0', require: false
 end
 
 group :development do
   gem 'listen', '~> 3.0.5'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.10.0'
   gem 'binding_of_caller', platform: 'ruby'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.7.4'
 end
 
 group :test do
   gem 'rails-controller-testing'
   gem 'rake'
   gem 'rspec'
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 5.0.0', require: false
   gem 'rspec-activemodel-mocks'
   gem 'mongoid-rspec', require: false
   gem 'fabrication'
-  gem 'capybara'
+  gem 'capybara', '>= 3.38.0'
   gem 'poltergeist'
   gem 'phantomjs'
   gem 'launchy'
@@ -96,7 +96,7 @@ end
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.5.1'
 gem 'pjax_rails'
 gem 'underscore-rails'
 
