@@ -78,7 +78,7 @@ group :test do
   gem 'rspec'
   gem 'rspec-rails', require: false
   gem 'rspec-activemodel-mocks'
-  gem 'mongoid-rspec', require: false
+  gem 'mongoid-rspec', '>= 4.2.0', require: false
   gem 'fabrication'
   gem 'capybara'
   gem 'poltergeist'
