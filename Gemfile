@@ -80,7 +80,7 @@ group :test do
   gem 'rspec-activemodel-mocks'
   gem 'mongoid-rspec', require: false
   gem 'fabrication'
-  gem 'capybara'
+  gem 'capybara', '>= 3.38.0'
   gem 'poltergeist'
   gem 'phantomjs'
   gem 'launchy'
