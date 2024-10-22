@@ -5,9 +5,9 @@ RAILS_VERSION = '5.0.7.2'
 
 ruby File.read(".ruby-version")
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 6.1.7.9', RAILS_VERSION
+gem 'actionpack', '>= 6.1.7.9', RAILS_VERSION
+gem 'railties', '>= 6.1.7.9', RAILS_VERSION
 
 gem 'activemodel-serializers-xml'
 gem 'actionmailer_inline_css'
